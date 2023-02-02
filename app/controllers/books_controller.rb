@@ -34,7 +34,9 @@ class BooksController < ApplicationController
       end
     end
   end
-
+    def show
+      @book_review = BookReview.new
+  end
   # PATCH/PUT /books/1 or /books/1.json
   def update
     respond_to do |format|
